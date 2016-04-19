@@ -11,7 +11,6 @@ import networkx as nx
 from nltk.collocations import * 
 from nltk.stem.porter import *
 
-stemmer = PorterStemmer()
 tagger = nltk.tag.perceptron.PerceptronTagger()
 wnl = WordNetLemmatizer()
 colloc_list = []
@@ -154,7 +153,7 @@ def joincollocbi(tagged):
 blacklist = []
 fname=sys.argv[1]
 articles = os.listdir(fname)
-FOLDER = 'keywords-'+fname+'-trsentw'
+FOLDER = 'keywords-'+fname+'-textrank'
 if not os.path.exists(FOLDER): os.makedirs(FOLDER)
 
 tagged = []
@@ -180,7 +179,7 @@ entity_names = set(entity_names)
 bigram_measures = nltk.collocations.BigramAssocMeasures()
 finder = nltk.collocations.BigramCollocationFinder.from_words(tagged)
 finder.apply_freq_filter(3)
-colloc_list = finder.nbest(bigram_measures.pmi, 20)
+colloc_list = finder.nbest(bigram_measures.pmi, 20) # this needs to be tweaked
 
 for article in articles:
     print 'Reading articles/' + article
@@ -220,7 +219,7 @@ for article in articles:
             try:
               s1 = sentence[i][0] + '/' + sentence[i][1]
               s2 = sentence[j][0] + '/' + sentence[j][1]
-              wt = float(1.0)/float(len(sentence))
+#              wt = float(1.0)/float(len(sentence)) # if weighting by sentence length is desired
               wt = 1
               gr.add_edge(s1,s2,weight=wt)
             except AdditionError, e:
