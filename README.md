@@ -1,8 +1,8 @@
 # TextRank
 
 ## Description
-
-This is an implementation of the TextRank algorithm for keyword extraction from documents. It adapts the PageRank algorithm to documents and was (originally published in 2004)[https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf].
+   
+This is an implementation of the TextRank algorithm for keyword extraction from documents. It adapts the PageRank algorithm to documents and was [originally published in this article](https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf).
 
 ## Usage
 
@@ -14,11 +14,13 @@ Gets the historical tweets of a list of users. If given a folder where tweet fil
 
 folder - folder with the documents to extract keywords
 
-**Output**: a folder 'keywords-folder-textrank' with the keywords and their score, one per line, separated by a colon. This format can be used to generate word clouds using http://wordle.net/advanced
+**Output**: a folder 'keywords-folder-textrank' with the keywords and their score, one per line, separated by a colon. This format can be used to generate word clouds using [Wordle](http://wordle.net/advanced)
 
-## Example 
+## Examples
 
 Find the most central words from the US primary debate speeches.
 	
 	python textrank.py candidates
 
+
+![Trump's keywords](http://www.sas.upenn.edu/~danielpr/trump-trsentw.png)
