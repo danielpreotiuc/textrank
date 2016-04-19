@@ -26,5 +26,7 @@ Find the most central words from the US primary debate speeches.
 	
 	python textrank.py candidates
 
-Trump's primary Debate Speeches keywords generated using Wordle
-![Trump's keywords](http://www.sas.upenn.edu/~danielpr/trump-trsentw.png)
+<center>
+Bernie Sanders' primary Debate Speeches keywords generated using Wordle:
+![Sanders' keywords](http://www.sas.upenn.edu/~danielpr/sanders-trsentw.png)
+</center>
