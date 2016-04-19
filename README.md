@@ -12,7 +12,7 @@ For the script to run, you need to [install NLTK](http://www.nltk.org/).
 
 #### textrank.py
 
-Gets the historical tweets of a list of users. If given a folder where tweet files of users exists, resumes from the last seen tweet. Suitable for running as a cron job in order to update the tweets at a regular time interval.
+Usage:
 
         python textrank.py folder
 
