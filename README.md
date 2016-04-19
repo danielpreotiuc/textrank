@@ -12,8 +12,6 @@ For the script to run, you need to [install NLTK](http://www.nltk.org/).
 
 #### textrank.py
 
-Usage:
-
         python textrank.py folder
 
 folder - folder with the documents to extract keywords
