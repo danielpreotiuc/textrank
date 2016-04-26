@@ -34,14 +34,18 @@ Find the most central words from the NLP conferences accepted papers.
 	python textrank.py conferences
 
 <center>
-[ACL 2015](http://www.sas.upenn.edu/~danielpr/acl15.png)
+ACL 2015 titles
+![ACL 2015](http://www.sas.upenn.edu/~danielpr/acl15.png)
 </center>
 <center>
-[EMNLP 2015](http://www.sas.upenn.edu/~danielpr/emnlp15.png)
+EMNLP 2015 titles
+![EMNLP 2015](http://www.sas.upenn.edu/~danielpr/emnlp15.png)
 </center>
 <center>
-[NAACL 2016](http://www.sas.upenn.edu/~danielpr/naacl16.png)
+NAACL 2016 titles
+![NAACL 2016](http://www.sas.upenn.edu/~danielpr/naacl16.png)
 </center>
 <center>
-[ACL 2016 Short Papers](http://www.sas.upenn.edu/~danielpr/acl16short.png)
+ACL 2016 Short Paper titles
+![ACL 2016 Short Papers](http://www.sas.upenn.edu/~danielpr/acl16short.png)
 </center>
