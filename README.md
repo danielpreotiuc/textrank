@@ -28,3 +28,20 @@ Find the most central words from the US primary debate speeches.
 Bernie Sanders' primary Debate Speeches keywords generated using Wordle:
 ![Sanders' keywords](http://www.sas.upenn.edu/~danielpr/sanders-trsentw.png)
 </center>
+
+Find the most central words from the NLP conferences accepted papers.
+
+	python textrank.py conferences
+
+<center>
+[ACL 2015](http://www.sas.upenn.edu/~danielpr/acl15.png)
+</center>
+<center>
+[EMNLP 2015](http://www.sas.upenn.edu/~danielpr/emnlp15.png)
+</center>
+<center>
+[NAACL 2016](http://www.sas.upenn.edu/~danielpr/naacl16.png)
+</center>
+<center>
+[ACL 2016 Short Papers](http://www.sas.upenn.edu/~danielpr/acl16short.png)
+</center>
